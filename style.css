@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Roboto Slab", serif;
+  background-image: url(img/dollars.jpg);
+  color: white;
+}
+
+.wrapper {
+  padding: 50px;
+  width: 800px;
+  background-color: rgb(76, 133, 118);
+  text-align: center;
+  border-radius: 15px;
+  /* border: 3px solid black; */
+  box-shadow: 15px 10px 20px black;
+}
+
+.wrapper h1 {
+  margin-bottom: 10px;
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: black;
+}
+
+.wrapper p {
+  margin-bottom: 16px;
+  font-size: 26px;
+  font-weight: 200;
+}
+
+.app-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-left,
+.section-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-body input {
+  margin-bottom: 10px;
+  width: 100%;
+  font-size: 50px;
+}
+
+.app-body input,
+.app-body select {
+  color: white;
+  border: none;
+  background-color: transparent;
+  text-align: center;
+}
+
+.app-body select {
+  padding: 10px 20px;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.app-body input:focus,
+.app-body select:focus {
+  outline: none;
+  color: rgb(67, 171, 255);
+}
+
+.app-body option {
+  color: #333;
+}
+
+.swap {
+  align-self: flex-end;
+  margin: 5px;
+  padding: 5px 50px;
+  background-color: black;
+  font-size: 30px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+}
+
+.swap:focus {
+  outline: none;
+  background-image: none;
+  background-image: linear-gradient(black, rgb(98, 97, 97));
+}
+
+.wrapper .rate-info {
+  margin-top: 30px;
+  font-size: 30px;
+}
+
+.wrapper .rate-info span {
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: black;
+}
